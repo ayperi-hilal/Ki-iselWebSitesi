@@ -3,7 +3,10 @@
      
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  
-        iletişim sayfasıdır
+  <div>
+      <asp:Label Text="İletişim" runat="server" />
+      iletişim sayfasıdır
+  </div>
+        
 
 </asp:Content>
