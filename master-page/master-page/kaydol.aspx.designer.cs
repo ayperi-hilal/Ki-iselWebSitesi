@@ -11,17 +11,8 @@ namespace master_page
 {
 
 
-    public partial class main
+    public partial class kaydol
     {
-
-        /// <summary>
-        /// head denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
         /// <summary>
         /// form1 denetimi.
@@ -33,40 +24,13 @@ namespace master_page
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtArama denetimi.
+        /// pnlKayit denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtArama;
-
-        /// <summary>
-        /// btnarama denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnarama;
-
-        /// <summary>
-        /// ContentPlaceHolder1 denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-
-        /// <summary>
-        /// girisPanel denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel girisPanel;
+        protected global::System.Web.UI.WebControls.Panel pnlKayit;
 
         /// <summary>
         /// txtKullaniciAdi denetimi.
@@ -87,13 +51,13 @@ namespace master_page
         protected global::System.Web.UI.WebControls.TextBox txtsifre;
 
         /// <summary>
-        /// btnGiris denetimi.
+        /// btnKayit denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnGiris;
+        protected global::System.Web.UI.WebControls.Button btnKayit;
 
         /// <summary>
         /// lblSonuc denetimi.
@@ -105,39 +69,21 @@ namespace master_page
         protected global::System.Web.UI.WebControls.Label lblSonuc;
 
         /// <summary>
-        /// pnlKullanici denetimi.
+        /// pnlDurum denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlKullanici;
+        protected global::System.Web.UI.WebControls.Panel pnlDurum;
 
         /// <summary>
-        /// lblKullniciAdi denetimi.
+        /// lblDurum denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblKullniciAdi;
-
-        /// <summary>
-        /// oturumuKapat denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button oturumuKapat;
-
-        /// <summary>
-        /// lstDuyuru denetimi.
-        /// </summary>
-        /// <remarks>
-        /// Otomatik üretilmiş alan.
-        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListView lstDuyuru;
+        protected global::System.Web.UI.WebControls.Label lblDurum;
     }
 }

@@ -60,6 +60,7 @@ header {
                 /* margin-left: 15px;*/
                 margin: 0 10px;
                 color: #971818;
+                cursor: default;
             }
 
                 header nav ul li.konular-wrap {
@@ -114,9 +115,8 @@ header {
 .icerik {
     float: right;
     width: 625px;
-    height: 500px;
-    margin-top: 45px;
-    background-color: lawngreen;
+    height: auto;
+    background-color: greenyellow;
 }
 
 .solTaraf {
@@ -211,6 +211,22 @@ header {
     }
 
     .solTaraf .hizli-kayit .alt .btnKayit {
+        float: left;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: blue;
+        background-color: white;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+        .solTaraf .hizli-kayit .alt .btnKayit:hover {
+            color: aqua;
+        }
+
+    .solTaraf .hizli-kayit .alt .btnGiris {
         float: right;
         width: 100px;
         height: 40px;
@@ -219,6 +235,24 @@ header {
         color: white;
         background-color: blue;
         margin-top: 10px;
+        cursor: pointer;
+    }
+
+        .solTaraf .hizli-kayit .alt .btnGiris:hover {
+            background-color: aqua;
+        }
+
+    .solTaraf .hizli-kayit .oturumuKapat {
+     /*   float: left;*/
+        color: #0099CC;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    .solTaraf .hizli-kayit .pnlKullanici {
+        width: 250px;
+        background-color: #fff;
+        padding: 15px;
     }
 
 footer {

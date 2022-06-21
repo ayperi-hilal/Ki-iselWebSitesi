@@ -4,9 +4,10 @@
 
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-      <title>Görsel eğitim</title>
-    <link href="/style.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Görsel eğitim</title>
+    <%--<link href="/style.css" rel="stylesheet" />--%>
+    <link href="/styles.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 
 
@@ -29,9 +30,9 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        
-        
-          <div id="wrapper">
+
+
+        <div id="wrapper">
 
             <header>
 
@@ -43,18 +44,17 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="default.aspx">Anasayfa</a>
+                            <a href="/">Anasayfa</a>
                         </li>
-                        <li class="konular-wrap">
-                            <a href="#">Konular</a>
+                        <li class="konular-wrap">Konular
                             <div class="konular">
                                 <ul>
                                     <li>
                                         <a href="programlama.aspx">Programlama</a> </li>
                                     <li>
-                                        <a href="web.aspx"> Web</a></li>
+                                        <a href="web.aspx">Web</a></li>
                                     <li>
-                                        <a href="tasarim.aspx"> tasarım</a></li>
+                                        <a href="tasarim.aspx">tasarım</a></li>
 
                                 </ul>
                             </div>
@@ -81,31 +81,41 @@
             </div>
 
             <div class="icerik">
-               <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
-            </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
             </div>
             <div class="solTaraf">
 
                 <div class="hizli-kayit">
-                    <div class="ust">
-                        Hızlı Kayıt Ol
-                    </div>
 
-                    <div class="alt">
-                        <div class="kullanici">
-                            <span>Kullanıcı adı</span>
-                            <asp:TextBox ID="txtKullaniciAdi" CssClass="txtbox" runat="server" />
+
+                    <asp:Panel ID="girisPanel" runat="server">
+
+
+                        <div class="ust">
+                            Kullanıcı Girişi
                         </div>
-                        <div class="sifre">
-                            <span>Şifre</span>
-                            <asp:TextBox ID="txtsifre" CssClass="txtbox" runat="server" />
+
+                        <div class="alt">
+                            <div class="kullanici">
+                                <span>Kullanıcı adı</span>
+                                <asp:TextBox ID="txtKullaniciAdi" CssClass="txtbox" runat="server" />
+                            </div>
+                            <div class="sifre">
+                                <span>Şifre</span>
+                                <asp:TextBox ID="txtsifre" CssClass="txtbox" runat="server" TextMode="Password" />
+                            </div>
+                           <%-- <asp:Button ID="btnKayit" CssClass="btnKayit" Text="Kaydol" runat="server" />--%>
+                            <a href="kaydol.aspx" class="btnKayit"> Kaydol</a>
+                            <asp:Button ID="btnGiris" CssClass="btnGiris" Text="Giriş" runat="server" OnClick="btnGiris_Click" />
+                            <asp:Label ID="lblSonuc" Text="" runat="server" />
                         </div>
-                        <asp:Button ID="btnKayit" CssClass="btnKayit" Text="Kaydol" runat="server" OnClick="btnKayit_Click" />
-
-                        <asp:Label ID="lblSonuc" Text="" runat="server" />
-                    </div>
-
+                    </asp:Panel>
+                    <asp:Panel ID="pnlKullanici" runat="server" CssClass="pnlKullanici">
+                        Hoşgeldiniz, <asp:Label ID="lblKullniciAdi" Text="" runat="server" />
+                        <br />
+                        <asp:Button ID="oturumuKapat" CssClass="oturumuKapat" Text="Oturumu Kapat" runat="server" OnClick="oturumuKapat_Click" />
+                    </asp:Panel>
                 </div>
 
                 <div class="duyurular">
@@ -137,10 +147,10 @@
 
         </div>
 
-           
 
 
-       
+
+
     </form>
 </body>
 </html>

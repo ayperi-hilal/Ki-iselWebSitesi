@@ -11,15 +11,29 @@ namespace master_page
 {
     public partial class main : System.Web.UI.MasterPage
     {
+        SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings[0].ConnectionString);
+
         protected void Page_Load(object sender, EventArgs e)
         {
             duyurularıGetir();
+
+            object kullanici = Session["kullaniciadi"];
+            if (kullanici != null)
+            {
+                girisPanel.Visible = false;
+                pnlKullanici.Visible = true;
+                lblKullniciAdi.Text = kullanici.ToString();
+            }
+            else
+            {
+                girisPanel.Visible = true;
+                pnlKullanici.Visible = false;
+               
+            }
         }
 
         private void duyurularıGetir()
         {
-            SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings[0].ConnectionString);
-
             string sorgu = "select *from tbl_duyurular order by tarih desc ";
 
             SqlCommand cmd = new SqlCommand(sorgu, cnn);
@@ -32,38 +46,37 @@ namespace master_page
             cnn.Close();
         }
 
-        protected void btnKayit_Click(object sender, EventArgs e)
+        protected void btnGiris_Click(object sender, EventArgs e)
         {
-            if (txtKullaniciAdi.Text != "" && txtsifre.Text != "")
+            string sorgu = "select * from tbl_kullanicilar where kullaniciAdi=@kullaniciAdi and sifre=@sifre";
+
+            SqlCommand cmd = new SqlCommand(sorgu, cnn);
+            cmd.Parameters.AddWithValue("@kullaniciAdi", txtKullaniciAdi.Text);
+            cmd.Parameters.AddWithValue("@sifre", txtsifre.Text);
+            cnn.Open();
+
+            SqlDataReader dr = cmd.ExecuteReader();
+
+            if (dr.Read())
             {
-                SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings[0].ConnectionString);
+                Session.Timeout = 300;
+                Session.Add("kullaniciadi", dr["kullaniciAdi"].ToString());
+                Response.Redirect(Request.RawUrl);
 
-                string sorgu = "insert into tbl_kullanicilar (kullaniciAdi,sifre) values (@kullaniciAdi,@sifre) ";
-
-                SqlCommand cmd = new SqlCommand(sorgu, cnn);
-                cnn.Open();
-
-                try
-                {
-
-                    cmd.Parameters.AddWithValue("@kullaniciAdi", txtKullaniciAdi.Text);
-                    cmd.Parameters.AddWithValue("@sifre", txtsifre.Text);
-
-                    cmd.ExecuteNonQuery();
-                    cnn.Close();
-
-                    lblSonuc.Text = "Kayıt başarılıdır";
-                }
-                catch (Exception)
-                {
-
-                    lblSonuc.Text = "Kayıt yapılamamıştır";
-                }
             }
             else
             {
-                lblSonuc.Text = "Boş alan bırakmayınız";
+                lblSonuc.Text = "Kullanıcı girişi sağlanamadı";
             }
+
+            cnn.Close();
+
+        }
+
+        protected void oturumuKapat_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect(Request.RawUrl);
         }
     }
 }

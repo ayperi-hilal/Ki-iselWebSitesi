@@ -69,7 +69,9 @@
   <ItemGroup>
     <Content Include="default.aspx" />
     <Content Include="iletişim.aspx" />
+    <Content Include="kaydol.aspx" />
     <Content Include="programlama.aspx" />
+    <Content Include="styles.css" />
     <Content Include="tasarim.aspx" />
     <Content Include="web.aspx" />
     <Content Include="Web.config" />
@@ -88,6 +90,13 @@
     </Compile>
     <Compile Include="iletişim.aspx.designer.cs">
       <DependentUpon>iletişim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kaydol.aspx.cs">
+      <DependentUpon>kaydol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kaydol.aspx.designer.cs">
+      <DependentUpon>kaydol.aspx</DependentUpon>
     </Compile>
     <Compile Include="main.Master.cs">
       <DependentUpon>main.Master</DependentUpon>
