@@ -5,11 +5,9 @@
 <html>
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Görsel eğitim</title>
-    <%--<link href="/style.css" rel="stylesheet" />--%>
+    <title>Web Sitesi</title>
     <link href="/styles.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
-
 
     <script type="text/javascript">
         $("document").ready(function () {
@@ -23,6 +21,19 @@
     </script>
 
 
+    <link rel="stylesheet" href="sss/sss.css" type="text/css" media="all">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="/sss/sss.css"></script>
+    <script> 
+        jQuery(function ($) {
+            $('.slider').sss();
+        });
+    </script>
+
+
+
+
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
@@ -31,11 +42,9 @@
 <body>
     <form id="form1" runat="server">
 
-
         <div id="wrapper">
 
             <header>
-
 
                 <div class="logo">
                     LOGO
@@ -55,7 +64,6 @@
                                         <a href="web.aspx">Web</a></li>
                                     <li>
                                         <a href="tasarim.aspx">tasarım</a></li>
-
                                 </ul>
                             </div>
 
@@ -65,7 +73,7 @@
 
                         </li>
                         <li>
-                            <a href="default.aspx">İletişim</a>
+                            <a href="iletişim.aspx">İletişim</a>
 
                         </li>
                     </ul>
@@ -77,7 +85,28 @@
             </header>
 
             <div class="banner">
-                Programlama ve Web Tasarım
+                <%-- SİLİDER GELECEK YER--%>
+
+                <div class="slider">
+                    <div class="slider-content">
+                        <div class="slider-item">
+                            <img src="sss/images/c1.jpg">
+                        </div>
+                        <div class="slider-item">
+                            <img src="sss/images/c2.jpg">
+                        </div>
+                        <div class="slider-item">
+                            <img src="sss/images/c3.jpg">
+                        </div>
+                        <div class="slider-item">
+                            <img src="sss/images/c4.jpg">
+                        </div>
+                        <div class="slider-item">
+                            <img src="sss/images/c5.png">
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="icerik">
@@ -105,14 +134,15 @@
                                 <span>Şifre</span>
                                 <asp:TextBox ID="txtsifre" CssClass="txtbox" runat="server" TextMode="Password" />
                             </div>
-                           <%-- <asp:Button ID="btnKayit" CssClass="btnKayit" Text="Kaydol" runat="server" />--%>
-                            <a href="kaydol.aspx" class="btnKayit"> Kaydol</a>
+                            <%-- <asp:Button ID="btnKayit" CssClass="btnKayit" Text="Kaydol" runat="server" />--%>
+                            <a href="kaydol.aspx" class="btnKayit">Kaydol</a>
                             <asp:Button ID="btnGiris" CssClass="btnGiris" Text="Giriş" runat="server" OnClick="btnGiris_Click" />
                             <asp:Label ID="lblSonuc" Text="" runat="server" />
                         </div>
                     </asp:Panel>
                     <asp:Panel ID="pnlKullanici" runat="server" CssClass="pnlKullanici">
-                        Hoşgeldiniz, <asp:Label ID="lblKullniciAdi" Text="" runat="server" />
+                        Hoşgeldiniz,
+                        <asp:Label ID="lblKullniciAdi" Text="" runat="server" />
                         <br />
                         <asp:Button ID="oturumuKapat" CssClass="oturumuKapat" Text="Oturumu Kapat" runat="server" OnClick="oturumuKapat_Click" />
                     </asp:Panel>
@@ -141,16 +171,31 @@
                 </div>
             </div>
 
+
             <footer>
-                tasarımı yapılmıştır.
+                <div class="medya">
+
+                    <a href="https://github.com/ayperi-hilal">
+                        <img src="/sss/images/githup.png" alt="Alternate Text" height="50" width="50" />
+                    </a>
+
+                    <a href="https://github.com/ayperi-hilal">
+                        <img src="/sss/images/instagram.jpg" alt="Alternate Text" height="50" width="50" />
+                    </a>
+
+                    <a href="https://github.com/ayperi-hilal">
+                        <img src="/sss/images/dis.png" alt="Alternate Text" height="50" width="50" />
+                    </a>
+                    <a href="https://github.com/ayperi-hilal">
+                        <img src="/sss/images/mail.jpg" alt="Alternate Text" height="50" width="50" />
+                    </a>
+
+
+                    tasarımı yapılmıştır.
+                </div>
+
             </footer>
-
         </div>
-
-
-
-
-
     </form>
 </body>
 </html>
