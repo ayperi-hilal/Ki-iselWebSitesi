@@ -18,7 +18,7 @@
 
             <br />
             <div>
-                <a href ="mailto:ayyildizsoftware@hotmail.com">ayyizdizsoftware@gmail.com</a> adresime e-posta gönderebilirsiniz veya aşağıdaki iletişim formu ile mesajınızı bırakabilirsiniz.
+                <a href ="mailto:ayyizdizsoftware@gmail.com">ayyizdizsoftware@gmail.com</a> adresime e-posta gönderebilirsiniz veya aşağıdaki iletişim formu ile mesajınızı bırakabilirsiniz.
             </div>
             <br />
 

@@ -21,12 +21,12 @@ namespace master_page
         {
             MailMessage mesajm = new MailMessage();
             SmtpClient istemci = new SmtpClient();
-            istemci.Credentials = new System.Net.NetworkCredential("ayyildizsoftware@hotmail.com", "123h.321");
+            istemci.Credentials = new System.Net.NetworkCredential("ayyizdizsoftware@gmail.com", "123h.321");
             istemci.Port = 578;
             istemci.Host = "smtp.live.com";
             istemci.EnableSsl = true;
             mesajm.To.Add(txtEmail.Text);
-            mesajm.From = new MailAddress("ayyildizsoftware@hotmail.com");
+            mesajm.From = new MailAddress("ayyizdizsoftware@gmail.com");
             mesajm.Subject = txtKonu.Text;
             mesajm.Body = comments.Text;
             istemci.Send(mesajm);
@@ -36,13 +36,13 @@ namespace master_page
 
 
             //MailMessage mail = new MailMessage();
-            //mail.From = new MailAddress("ayyildizsoftware@hotmail.com");
+            //mail.From = new MailAddress("ayyizdizsoftware@gmail.com");
             //mail.To.Add(txtEmail.Text);
             //mail.Subject = txtKonu.Text;
             //mail.Body = comments.Text;
 
             //SmtpClient mess = new SmtpClient();
-            //mess.Credentials = new NetworkCredential("ayyildizsoftware@hotmail.com", "123h.321");
+            //mess.Credentials = new NetworkCredential("ayyizdizsoftware@gmail.com", "123h.321");
             //mess.Port = 587;
             //mess.Host = "smtp.office365.com";
             //mess.EnableSsl = true;
