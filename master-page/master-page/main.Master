@@ -7,6 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Web Sitesi</title>
     <link href="/styles.css" rel="stylesheet" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 
     <script type="text/javascript">
@@ -174,7 +175,7 @@
 
             <footer>
                 <div class="medya">
-
+                    
                     <a href="https://github.com/ayperi-hilal">
                         <img src="/sss/images/githup.png" alt="Alternate Text" height="50" width="50" />
                     </a>
@@ -186,10 +187,14 @@
                     <a href="https://github.com/ayperi-hilal">
                         <img src="/sss/images/dis.png" alt="Alternate Text" height="50" width="50" />
                     </a>
+
                     <a href="https://github.com/ayperi-hilal">
                         <img src="/sss/images/mail.jpg" alt="Alternate Text" height="50" width="50" />
                     </a>
 
+                     <a href="https://github.com/ayperi-hilal">
+                        <img src="/sss/images/youtube.png" alt="Alternate Text" height="50" width="50" />
+                    </a>
 
                     tasarımı yapılmıştır.
                 </div>

@@ -111,8 +111,8 @@ C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\
 C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\obj\Debug\master-page.csproj.AssemblyReference.cache
 C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\obj\Debug\master-page.csproj.CoreCompileInputs.cache
 C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\obj\Debug\master-page.csproj.CopyComplete
 C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\obj\Debug\master-page.dll
 C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\obj\Debug\master-page.pdb
+C:\Users\DOKÜMANTASYON\source\repos\personallWebSitesi\master-page\master-page\obj\Debug\master-page.csproj.AssemblyReference.cache

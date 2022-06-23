@@ -67,12 +67,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap.css" />
     <Content Include="default.aspx" />
     <Content Include="iletişim.aspx" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery-3.6.0.min.js" />
     <Content Include="kaydol.aspx" />
     <Content Include="programlama.aspx" />
+    <Content Include="sayfalar\c-sharp\c-sharp.aspx" />
+    <Content Include="sayfalar\python\python.aspx" />
+    <Content Include="sayfalar\react\reactNative.aspx" />
     <Content Include="sss\images\arr.png" />
     <Content Include="sss\images\banner.jpg" />
+    <Content Include="sss\images\c-sharp.jpg" />
     <Content Include="sss\images\c1.jpg" />
     <Content Include="sss\images\c2.jpg" />
     <Content Include="sss\images\c3.jpg" />
@@ -80,9 +87,13 @@
     <Content Include="sss\images\c5.png" />
     <Content Include="sss\images\dis.png" />
     <Content Include="sss\images\githup.png" />
+    <Content Include="sss\images\html.jpg" />
     <Content Include="sss\images\instagram.jpg" />
     <Content Include="sss\images\mail.jpg" />
     <Content Include="sss\images\profilPhoto.jpg" />
+    <Content Include="sss\images\python.jpg" />
+    <Content Include="sss\images\react.png" />
+    <Content Include="sss\images\youtube.png" />
     <Content Include="sss\license.txt" />
     <Content Include="sss\sss.css" />
     <Content Include="sss\sss.js" />
@@ -129,6 +140,27 @@
       <DependentUpon>programlama.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sayfalar\c-sharp\c-sharp.aspx.cs">
+      <DependentUpon>c-sharp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sayfalar\c-sharp\c-sharp.aspx.designer.cs">
+      <DependentUpon>c-sharp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sayfalar\python\python.aspx.cs">
+      <DependentUpon>python.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sayfalar\python\python.aspx.designer.cs">
+      <DependentUpon>python.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sayfalar\react\reactNative.aspx.cs">
+      <DependentUpon>reactNative.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sayfalar\react\reactNative.aspx.designer.cs">
+      <DependentUpon>reactNative.aspx</DependentUpon>
+    </Compile>
     <Compile Include="tasarim.aspx.cs">
       <DependentUpon>tasarim.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

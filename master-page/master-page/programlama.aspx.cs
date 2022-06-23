@@ -13,5 +13,20 @@ namespace master_page
         {
 
         }
+
+        protected void btnReact_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/sayfalar/react/reactNative.aspx");            
+        }
+
+        protected void btncsharp_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/sayfalar/c-sharp/c-sharp.aspx");
+        }
+
+        protected void btnPython_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/sayfalar/python/python.aspx");
+        }
     }
 }
